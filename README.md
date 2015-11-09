@@ -13,11 +13,11 @@ There are 3 ways to use the Drools platform, this project showcases the differen
   * Inspect the `drools-usage-patterns-fetch` project to see how to use rules that are fetched with maven, potentially changing without updating your code!
   * KieBaseProvider.java
 	```shell
-  		//The releaseId uses maven groupId, artifactId, and version to specify a kjar (set of rules)
-		String groupId = "com.rhc.drools.example";
-		String artifactId = "drools-usage-patterns-kjar";
-		String version = "1.0.0-SNAPSHOT";
-		ReleaseId releaseId = KIE_SERVICES.newReleaseId(groupId, artifactId, version);
+  	//The releaseId uses maven groupId, artifactId, and version to specify a kjar (set of rules)
+	String groupId = "com.rhc.drools.example";
+	String artifactId = "drools-usage-patterns-kjar";
+	String version = "1.0.0-SNAPSHOT";
+	ReleaseId releaseId = KIE_SERVICES.newReleaseId(groupId, artifactId, version);
 	```
  * dependency: drools-usage-patterns-model
  
