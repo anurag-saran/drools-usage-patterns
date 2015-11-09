@@ -1,0 +1,9 @@
+package com.rhc.drools.example
+import com.rhc.drools.example.model.Person;
+
+rule "Cust's age"
+when
+	$sal : Person(name == "MrRuleCustomer", age != 55)
+then
+	$sal.setAge(55);
+end
