@@ -4,7 +4,7 @@ There are 3 ways to use the Drools platform, this project showcases the differen
 1. Embedded/Generate
   * Inspect the `drools-usage-patterns-embedded` project to see how to use rules that are on your classpath
    EmbeddedKieBaseProvider.java : Any Rules in the classPath are added. i.e. src/main/resources/name.drl
-```shell
+	Ω```shell
    		KIE_CONTAINER = KieServices.Factory.get().newKieClasspathContainer();
 ```
   * dependency: drools-usage-patterns-model
@@ -12,13 +12,13 @@ There are 3 ways to use the Drools platform, this project showcases the differen
 2. Scanner 
   * Inspect the `drools-usage-patterns-fetch` project to see how to use rules that are fetched with maven, potentially changing without updating your code!
   * KieBaseProvider.java
-```shell
+	```shell
   		//The releaseId uses maven groupId, artifactId, and version to specify a kjar (set of rules)
 		String groupId = "com.rhc.drools.example";
 		String artifactId = "drools-usage-patterns-kjar";
 		String version = "1.0.0-SNAPSHOT";
 		ReleaseId releaseId = KIE_SERVICES.newReleaseId(groupId, artifactId, version);
-```
+	```
  * dependency: drools-usage-patterns-model
  
 3. Remote 
