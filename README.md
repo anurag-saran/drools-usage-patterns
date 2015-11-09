@@ -4,9 +4,9 @@ There are 3 ways to use the Drools platform, this project showcases the differen
 1. Embedded/Generate
   * Inspect the `drools-usage-patterns-embedded` project to see how to use rules that are on your classpath
    EmbeddedKieBaseProvider.java : Any Rules in the classPath are added. i.e. src/main/resources/name.drl
-	Ω```shell
+	```shell
    		KIE_CONTAINER = KieServices.Factory.get().newKieClasspathContainer();
-```
+	```
   * dependency: drools-usage-patterns-model
   
 2. Scanner 
