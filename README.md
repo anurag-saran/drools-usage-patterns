@@ -25,8 +25,7 @@ There are 3 ways to use the Drools platform, this project showcases the differen
   * Inspect the `drools-usage-patterns-remote` project to see how to create a client for the realtime execution server, introduced in the latest version of Drools.
   * RemoteCommandExecutor.java
   ```shell
-	     //Creating a client to the KieServer requires a url, and username/password for a user
-	    //with the 'kie-server' role.
+	     //Creating a client to the KieServer requires a url, and username/password for a use with the 'kie-server' role.
 	    String url = "http://localhost:8080/kie-server/services/rest/server";
 	    String username = "kieserver";
 	    String password = "Pass@123";
